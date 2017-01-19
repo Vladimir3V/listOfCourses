@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<meta name="viewport" content="width=1195">
@@ -10,132 +11,151 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font.css">
 	<script src="js/modernizr-custom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	
+
 </head>
 
 <body>
-<div class="wrapper">
-	<header class="header">
-		<div class="container_header">
-			<div class="user_pic">
-				<img src="./images/user_pic_small.png" alt="Фото)">
-			</div>
-			<div class="user_info">
-				<div class="user_name">
-					<span>Вахрушев Влдаимир</span>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container_header">
+				<div class="user_pic">
+					<img src="./images/user_pic_small.png" alt="Фото)">
 				</div>
-				<div class="user_email">
-					<a href="">vladimir19870912@mail.ru</a>
-				</div>
-			</div>
-			<div class="socials">
-				<ul>
-					<li class="socials_icon"></li>
-					<li class="socials_icon"></li>
-					<li class="socials_icon"></li>
-				</ul>
-			</div>
-
-
-		</div>
-	</header>
-	<div class="main_container">
-		<div class="main_content">
-			<div class="about_wrapper">
-				<div class="about_header">
-					<div class="main_title">
-						<span>О будущем ученике</span>
+				<div class="user_info">
+					<div class="user_name">
+						<span>Вахрушев Влдаимир</span>
 					</div>
-					<div class="second_title">
-						<span>Ребятам из Loftschool будет полезно узнать немного обо мне</span>
+					<div class="user_email">
+						<a href="">vladimir19870912@mail.ru</a>
 					</div>
 				</div>
-				<div class="about_body">
-					<div class="about_body_personal">
-						<div class="personal_right">
-							<img src="./images/hello.png" alt="">
+				<div class="socials">
+					<ul>
+						<li class="socials_icon"></li>
+						<li class="socials_icon"></li>
+						<li class="socials_icon"></li>
+					</ul>
+				</div>
+
+
+			</div>
+		</header>
+		<div class="main_container">
+			<div class="main_content">
+				<div class="about_wrapper">
+					<div class="about_header">
+						<div class="main_title">
+							<span>О будущем ученике</span>
 						</div>
-						<div class="personal_left">
-							<div class="left_header">
-								<span>Немного обо мне</span>
+						<div class="second_title">
+							<span>Ребятам из Loftschool будет полезно узнать немного обо мне</span>
+						</div>
+					</div>
+					<div class="about_body">
+						<div class="about_body_personal">
+							<div class="personal_right">
+								<img src="./images/hello.png" alt="">
 							</div>
-							<div class="left_text">
-								<span>
+							<div class="personal_left">
+								<div class="left_header">
+									<span>Немного обо мне</span>
+								</div>
+								<div class="left_text">
+									<span>
 									Я живу в Санкт-Петербурге (Россия). Мне 26 лет. Высшее образование - закончил НИУ ИТМО. Опыт в разработке 1 год. Уже окончил курсы в Академии Программирования, где не плохо научился верстать. Пока есть только один сайт, которым могу похвастаться: <a href="">www.yandex.ru</a>
 								</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="about_body_exp">
-						<div class="personal_right">
-							<img src="./images/exp.png" alt="">
-						</div>
-						<div class="personal_left">
-							<div class="left_header">
-								<span>Мой опыт в разработке</span>
+						<div class="about_body_exp">
+							<div class="personal_right">
+								<img src="./images/exp.png" alt="">
 							</div>
-							<div class="left_text">
-								<span>
+							<div class="personal_left">
+								<div class="left_header">
+									<span>Мой опыт в разработке</span>
+								</div>
+								<div class="left_text">
+									<span>
 									В этом блоке я расскажу о себе, что я уже умею. Здесь я укажу другие курсы, которые до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру: html5, css3, sass, jade, git и пр.
 								</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="courses_wrap">
-				<div class="about_header">
-					<div class="main_title">
-						<span>Курсы на loftblog</span>
+				<div class="courses_wrap">
+					<div class="about_header">
+						<div class="main_title">
+							<span>Курсы на loftblog</span>
+						</div>
+						<div class="second_title">
+							<span> Которые мне помогут в выполнении этого задания </span>
+						</div>
 					</div>
-					<div class="second_title">
-						<span> Которые мне помогут в выполнении этого задания </span>
-					</div>
+
+					<div id="results"></div>
 				</div>
+				<div class="complete_wrap">
+					<div class="complete_text">
 
-				<ul class="courses_list">
-					<li class="course_item">
-						<div class="course_headpic">
-
-						</div>
-						<div class="course_text">
-							<div class="text_head">
-
-							</div>
-							<div class="text_content">
-
-							</div>
-							<div class="text_time">
-
-							</div>
-						</div>
-						<div class="course_time">
-
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="complete_wrap">
-				<div class="complete_text">
-
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="empty"></div>
 	</div>
 
-	<div class="empty"></div>
-</div>
 
-
-<footer class="footer">
-	<div class="container">
-		<div class="futer_text">
-			<span class="text">
+	<footer class="footer">
+		<div class="container">
+			<div class="futer_text">
+				<span class="text">
 					А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,
 					не зависимо от количества контента на странице и размера окна.
 				</span>
+			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
+	
+
+	<script type="text/x-handlebars-template" id="entrytemplate">
+		<ul class="courses_items">
+			{{#each list}}
+			<li class="course_item">
+				<div class="course_item_header">
+					<img src="{{imageSourse}}" alt="{{title}}">
+				</div>
+				<div class="course_item_text">
+					<div class="item_text_title">
+						{{title}}
+					</div>
+					<div class="item_text_description">
+						{{text}}
+					</div>
+					<div class="item_text_duration">
+						{{lessons}} ({{durationMinutes}})
+					</div>
+				</div>
+				<div class="course_item_checkbox">
+					<input type="checkbox" class="checkbox">
+					<label for="c1"><span class="checkbox_text">
+				Прошел
+			</span></label>
+					
+				</div>
+
+			</li>
+			{{/each}}
+		</ul>
+
+	</script>
+	<script src="js/main.js"></script>
+
 
 </body>
 

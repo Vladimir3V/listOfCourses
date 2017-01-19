@@ -1,0 +1,44 @@
+{
+	"1":{
+		"title":"Основы JavaScript",
+		"text":"Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.",
+		"lessons":"24 урока",
+		"durationMinutes":"6 часов 46 минут",
+		"imageSourse":"../images/courses_imgs/js_basics.png"
+	},
+	"2":{
+		"title":"Основы JQUERY",
+		"text":"Видеокурс о Jquery Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quibusdam, dolor dolorem qui rerum voluptate quas, eveniet ipsum tempora inventore, maxime. Accusantium earum aliquid illum numquam, temporibus i.",
+		"lessons":"11 уроков",
+		"durationMinutes":"2 часа 6 минут",
+		"imageSourse":"../images/courses_imgs/jquery.png"
+	},	
+	"3":{
+		"title":"Базовые элементы страницы",
+		"text":"Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.",
+		"lessons":"9 уроков",
+		"durationMinutes":"2 часа 7 минут",
+		"imageSourse":"../images/courses_imgs/basics_web.png"
+	},
+	"4":{
+		"title":"Создание адаптивных сайтов",
+		"text":"В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.",
+		"lessons":"7 уроков",
+		"durationMinutes":"2 часа 11 минут",
+		"imageSourse":"../images/courses_imgs/adaptive.png"
+	},	
+	"5":{
+		"title":"Верстка адаптивной css галереи",
+		"text":"В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.",
+		"lessons":"6 уроков",
+		"durationMinutes":"1 час 9 минут",
+		"imageSourse":"../images/courses_imgs/css_gallery.png"
+	},
+	"6":{
+		"title":"Верстка адаптивной css галереи",
+		"text":"В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.",
+		"lessons":"4 урока",
+		"durationMinutes":"50 минут",
+		"imageSourse":"../images/courses_imgs/button_generator.png"
+	}
+}
