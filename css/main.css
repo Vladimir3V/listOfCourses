@@ -193,6 +193,46 @@ ul {
 	padding-left: 20px;
 }
 
+.checkbox {
+    display: none;
+}
+
+.checkbox-custom {
+    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+    width: 20px;             /* Обязательно задаем ширину */
+    height: 20px;            /* Обязательно задаем высоту */
+    border: 2px solid #727272;
+	border-radius: 2px;
+}
+
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom {
+	    border: 2px solid #acd37e;
+
+}
+
+.checkbox:checked + .checkbox-custom::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+ 
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+	
+    background: url("../images/checked.png");     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+}
+
+.greenBackgound {
+	background: #ecf4e3;
+}
 
 	/*End of Main -> List_of_courses*/
 
