@@ -41,18 +41,38 @@ ul {
 
 /*-- END of NESSESARY --*/
 
+
 /*-- HEADER --*/
 
-.container_header {
+.header {
+	background: #8cc34b;
+}
+
+.container {
 	margin: 0 auto;
 	width: 1145px;
 }
 
-.header {
-	background: #8cc34b;
+.header_content {
 	height: 90px;
-	box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.20);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
 }
+
+.user_info {
+	margin-left: 20px;
+}
+
+
+
 
 .user_pic {
 	height: 60px;
@@ -64,28 +84,30 @@ ul {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 18px;
-
 }
 
-.user_info {
+
+.user_data {
 	display: inline-block;
 	vertical-align: middle;
 }
-.user_name .user_email {
-	float: left;
-}
-.socials {
-	float: right;
-	display: inline-block;
-    vertical-align: middle;
 
-}
+
+
+
+
 
 .socials_icon {
+	font-size: 30px;
 	width: 30px;
 	height: 30px;
 	display: inline-block;
-	background: black;
+	margin-left: 20px;
+	color: #ddedc9;
+}
+
+.socials_icon:hover {
+	color: #fff;
 }
 /*-- END of HEADER --*/
 
@@ -103,14 +125,27 @@ ul {
 }
 
 .about_wrapper {
-	height: 474px;
+	height: 330px;
 }
 
 .about_header {
 	margin-top: 80px;
 	height: 80px;
 	text-align: center;
+	margin-bottom: 46px;
 }
+
+.main_title {
+	font-family: 'fira_sansmedium';
+	font-size: 42px;
+}
+
+.second_title {
+	font-family: 'fira_sanslight';
+	font-size: 21px;
+	color: #727272;
+}
+
 
 .about_body_personal {
 	float: left;
@@ -131,6 +166,18 @@ ul {
 	width: 290px;
 }
 
+.left_header {
+	font-size: 21px;
+	margin-bottom: 21px;
+	line-height: 1;
+}
+
+.left_text {
+	font-family: 'fira_sanslight';
+	font-size: 14px;
+	color: #727272;
+}
+
 .about_body_exp {
 	display: inline-block;
 	width: 470px;
@@ -145,6 +192,8 @@ ul {
 
 .courses_wrap {
 	background: #f6f7f2;
+	padding-top: 80px;
+	text-align: center;
 }
 
 .course_item {
@@ -193,6 +242,7 @@ ul {
 	padding-left: 20px;
 }
 
+
 .checkbox {
     display: none;
 }
@@ -204,6 +254,7 @@ ul {
     border: 2px solid #727272;
 	border-radius: 2px;
 }
+
 
 .checkbox-custom,
 .label {
@@ -234,6 +285,16 @@ ul {
 	background: #ecf4e3;
 }
 
+.complete_wrap {
+	height: 300px;
+	background-color: #f8f9f6;
+	color: #8cc34b;
+	font-size: 41px;
+	line-height: 300px;
+	text-align: center;
+	display:none;
+	
+}
 	/*End of Main -> List_of_courses*/
 
 
@@ -247,7 +308,6 @@ ul {
 /*-- FOOTER --*/
 
 .footer {
-	
 	height: 70px;
 	background: black;
 	margin-top: -70px;
@@ -263,14 +323,18 @@ ul {
 	margin: 0 auto;
 	font-size: 14px;
 	line-height: 21px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	text-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 
 }
 
-.text {
-	display: table-cell;
-		vertical-align: middle;
-
-}
 
 /*-- END of FOOTER --*/

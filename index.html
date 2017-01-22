@@ -10,39 +10,51 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
 	<script src="js/modernizr-custom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-	
+
 
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="container_header">
-				<div class="user_pic">
-					<img src="./images/user_pic_small.png" alt="Фото)">
-				</div>
-				<div class="user_info">
-					<div class="user_name">
-						<span>Вахрушев Влдаимир</span>
-					</div>
-					<div class="user_email">
-						<a href="">vladimir19870912@mail.ru</a>
-					</div>
-				</div>
-				<div class="socials">
-					<ul>
-						<li class="socials_icon"></li>
-						<li class="socials_icon"></li>
-						<li class="socials_icon"></li>
-					</ul>
-				</div>
-
-
+<div class="header">
+	<div class="container">
+		<div class="header_content">
+			<div class="user_info">
+			<div class="user_pic">
+				<img src="./images/user_pic_small.png" alt="Фото)">
 			</div>
-		</header>
+			<div class="user_data">
+				<div class="user_name">
+					<span>Вахрушев Влдаимир</span>
+				</div>
+				<div class="user_email">
+					<a href="">vladimir19870912@mail.ru</a>
+				</div>
+			</div>
+		</div>
+		<div class="socials">
+			<ul>
+				<li class="socials_icon">
+					<i class="fa fa-vk" aria-hidden="true"></i>
+				</li>
+				<li class="socials_icon"><i class="fa fa-github" aria-hidden="true"></i>
+</li>
+				<li class="socials_icon"><i class="fa fa-skype" aria-hidden="true"></i></li>
+			</ul>
+		</div>
+			
+		</div>
+	
+		
+	</div>
+
+</div>
+
 		<div class="main_container">
 			<div class="main_content">
 				<div class="about_wrapper">
@@ -87,23 +99,27 @@
 						</div>
 					</div>
 				</div>
-				<div class="courses_wrap">
-					<div class="about_header">
-						<div class="main_title">
-							<span>Курсы на loftblog</span>
-						</div>
-						<div class="second_title">
-							<span> Которые мне помогут в выполнении этого задания </span>
-						</div>
-					</div>
-
-					<div id="results"></div>
+			</div>
+		</div>
+		<div class="courses_wrap" id="courses_wrap">
+			<div class="empty_block">
+			</div>
+			<div class="about_header">
+				<div class="main_title">
+					<span>Курсы на loftblog</span>
 				</div>
-				<div class="complete_wrap">
-					<div class="complete_text">
-
-					</div>
+				<div class="second_title">
+					<span> Которые мне помогут в выполнении этого задания </span>
 				</div>
+			</div>
+
+			<div id="results"></div>
+		</div>
+
+		<div class="complete_wrap" id="complete_block">
+			<div class="complete_text">
+				<i class="fa fa-check" aria-hidden="true"></i>
+Задание выполнено
 			</div>
 		</div>
 
@@ -138,6 +154,7 @@
 						{{text}}
 					</div>
 					<div class="item_text_duration">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>
 						{{lessons}} ({{durationMinutes}})
 					</div>
 					<div class="course_item_checkbox">
