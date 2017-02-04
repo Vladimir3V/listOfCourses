@@ -15,7 +15,8 @@ Stlyles of footer
 
 /*-- NESSESARY --*/
 
-html, body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -23,6 +24,7 @@ html, body {
 }
 
 body {
+	min-width: 1240px;
 	font-family: 'fira_sansregular';
 }
 
@@ -30,14 +32,19 @@ body {
 	position: relative;
 	overflow: hidden;
 	min-height: 100%;
-	
 }
 
 ul {
 	list-style: none outside none;
 	padding: 0;
 	margin: 0;
-} 
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
 
 /*-- END of NESSESARY --*/
 
@@ -46,33 +53,22 @@ ul {
 
 .header {
 	background: #8cc34b;
+	box-shadow: 0 2px 5px 0 rgba(51, 51, 51, 0.96);
+
+	margin-bottom: 50px;
 }
 
-.container {
-	margin: 0 auto;
-	width: 1145px;
-}
-
-.header_content {
+.header .container {
+	position: relative;
 	height: 90px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-
 }
 
 .user_info {
+	position: absolute;
+	top: 14px;
+	left: 0;
 	margin-left: 20px;
 }
-
-
-
 
 .user_pic {
 	height: 60px;
@@ -86,16 +82,34 @@ ul {
 	margin-right: 18px;
 }
 
-
 .user_data {
 	display: inline-block;
 	vertical-align: middle;
+	color: #fff;
 }
 
+.user_name {
+	font-family: 'fira_sansmedium';
+	font-size: 21px;
+	line-height: 28px;
+}
 
+.user_email {
+	font-size: 14px;
+	line-height: 28px;
+}
 
+a {
+	color: #fffAAA;
+	background: -webkit-linear-gradient(45deg,#ccc,#666);
+	background: linear-gradient(45deg,#ccc,#666);
+}
 
-
+.socials {
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
 
 .socials_icon {
 	font-size: 30px;
@@ -109,6 +123,8 @@ ul {
 .socials_icon:hover {
 	color: #fff;
 }
+
+
 /*-- END of HEADER --*/
 
 
@@ -117,19 +133,20 @@ ul {
 
 /*-- MAIN --*/
 
-	/*Main -> About_User*/
+
+/*Main -> About_User*/
 
 .main_container {
 	margin: 0 auto;
 	width: 960px;
+	padding-bottom: 50px;
 }
 
 .about_wrapper {
-	height: 330px;
+display: inline-block;
 }
 
 .about_header {
-	margin-top: 80px;
 	height: 80px;
 	text-align: center;
 	margin-bottom: 46px;
@@ -138,21 +155,21 @@ ul {
 .main_title {
 	font-family: 'fira_sansmedium';
 	font-size: 42px;
+	line-height: 28px;
 }
 
 .second_title {
 	font-family: 'fira_sanslight';
 	font-size: 21px;
+	line-height: 80px;
 	color: #727272;
 }
-
 
 .about_body_personal {
 	float: left;
 	display: inline-block;
 	width: 470px;
 	margin-right: 20px;
-
 }
 
 .personal_right {
@@ -169,12 +186,13 @@ ul {
 .left_header {
 	font-size: 21px;
 	margin-bottom: 21px;
-	line-height: 1;
+	line-height: 28px;
 }
 
 .left_text {
 	font-family: 'fira_sanslight';
 	font-size: 14px;
+	line-height: 21px;
 	color: #727272;
 }
 
@@ -184,23 +202,21 @@ ul {
 }
 
 
+/*End of Main -> About_User*/
 
 
-	/*End of Main -> About_User*/
-
-	/*Main -> List_of_courses*/
+/*Main -> List_of_courses*/
 
 .courses_wrap {
-	background: #f6f7f2;
+	background: url('../images/bg.png') 0 0 repeat;
 	padding-top: 80px;
-	text-align: center;
 }
 
 .course_item {
 	width: 300px;
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 7px;
+	margin-left: 6px;
 	margin-right: 10px;
 	margin-bottom: 20px;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -221,64 +237,61 @@ ul {
 .item_text_title {
 	padding: 20px;
 	font-size: 21px;
+	line-height: 28px;
 }
 
-.item_text_description{
+.item_text_description {
 	font-size: 14px;
 	line-height: 21px;
-	padding: 0px 20px 20px 20px;
-
+	padding: 0 20px 0 20px;
 }
 
 .item_text_duration {
+	color: #b6b6b6;
 	padding-left: 20px;
+	font-size: 14px;
+	line-height: 50px;
 }
 
 .course_item_checkbox {
 	height: 60px;
-	line-height:60px;
+	line-height: 60px;
 	background: #f6f7f2;
 	font-size: 18px;
 	padding-left: 20px;
 }
 
-
 .checkbox {
-    display: none;
+	display: none;
 }
 
 .checkbox-custom {
-    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
-    width: 20px;             /* Обязательно задаем ширину */
-    height: 20px;            /* Обязательно задаем высоту */
-    border: 2px solid #727272;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #727272;
 	border-radius: 2px;
 }
 
-
 .checkbox-custom,
 .label {
-    display: inline-block;
-    vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .checkbox:checked + .checkbox-custom {
-	    border: 2px solid #acd37e;
-
+	border: 2px solid #acd37e;
 }
 
 .checkbox:checked + .checkbox-custom::before {
-    content: "";             /* Добавляем наш псевдоэлемент */
-    display: block;          /* Делаем его блочным элементом */
-    position: absolute;      /* Позиционируем его абсолютным образом */
- 
-    /* Задаем расстояние от верхней, правой, нижней и левой границы */
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-	
-    background: url("../images/checked.png");     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url("../images/checked.png");
 }
 
 .greenBackgound {
@@ -292,48 +305,38 @@ ul {
 	font-size: 41px;
 	line-height: 300px;
 	text-align: center;
-	display:none;
-	
+	display: none;
 }
-	/*End of Main -> List_of_courses*/
+
+
+/*End of Main -> List_of_courses*/
 
 
 /*-- END of MAIN --*/
-
 
 .empty {
 	height: 70px;
 }
 
+
 /*-- FOOTER --*/
 
 .footer {
 	height: 70px;
-	background: black;
+	background: #000000;
 	margin-top: -70px;
 	font-family: 'fira_sansregular';
-}
-
-
-
-.futer_text {
-	width: 510px;
-	height: 70px;
-	color: gray;
-	margin: 0 auto;
 	font-size: 14px;
 	line-height: 21px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	text-align: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+}
 
+.futer_container {
+	margin-top: 10px;
+	display: inline-block;
+/*	text-align: center;*/
+	width: 520px;
+	color: #a9a9a9;
 }
 
 
